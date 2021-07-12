@@ -1,0 +1,48 @@
+.btn {
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      306.64deg,
+      rgba(#f23e60, 0.45) 27.07%,
+      rgba(#e84e57, 0.45) 71.29%
+    ),
+    linear-gradient(0deg, #f23e60, #e84e57);
+  width: max-content;
+  padding: 2rem 4rem;
+  border-radius: 50px;
+  font-size: 2rem;
+  position: relative;
+  box-shadow: 5px 18px 31px 1px rgba(#f23e60, 0.47);
+  border: none;
+
+  @include respond(phone-port) {
+    font-size: 1.7rem !important;
+    padding: 2rem 3.5rem !important;
+  }
+
+  &:disabled {
+    background: linear-gradient(
+        306.64deg,
+        rgba(41, 127, 255, 0.15) 27.07%,
+        rgba(81, 222, 255, 0.15) 71.29%
+      ),
+      linear-gradient(0deg, #93d9fc, #8ed9ff);
+    box-shadow: 5px 18px 31px 1px rgba(#000000, 0.3);
+    color: $white;
+  }
+
+  &::after {
+    content: "";
+    width: calc(100% + 1.5rem);
+    height: calc(100% + 1.5rem);
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    border: 1px solid #cfcfcf;
+  }
+}

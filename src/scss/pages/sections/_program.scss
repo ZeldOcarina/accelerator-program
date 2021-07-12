@@ -1,0 +1,16 @@
+.program {
+  background-color: #f4f7ff;
+  padding: 1rem;
+  text-align: center;
+
+  &__container {
+    @include container(12rem, 12rem);
+    width: 50%;
+  }
+
+  &__ul {
+    list-style: none;
+    margin: 4rem auto;
+    width: 70%;
+  }
+}

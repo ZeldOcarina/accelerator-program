@@ -1,0 +1,27 @@
+.faq {
+  &__container {
+    @include container(12rem, 12rem);
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__questions {
+  }
+
+  &__internal-title {
+    font-size: 3rem;
+  }
+
+  &__question-paragraph {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__ul {
+    list-style: none;
+  }
+}

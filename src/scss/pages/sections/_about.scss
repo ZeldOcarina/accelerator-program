@@ -1,0 +1,33 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f4f7ff;
+
+  &__container {
+    @include container(12rem, 12rem);
+  }
+
+  &__title,
+  &__intro {
+    text-align: center;
+  }
+
+  &__intro {
+    width: 50%;
+    margin: 4rem auto 8rem auto;
+  }
+
+  &__features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  &__text {
+    width: 50%;
+    margin: 6rem auto 0 auto;
+    text-align: center;
+  }
+}

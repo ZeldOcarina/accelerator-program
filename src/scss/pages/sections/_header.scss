@@ -1,0 +1,55 @@
+.header {
+  @include container(4rem, 0);
+
+  &__intro {
+    width: 90%;
+    margin: 0 auto 4rem auto;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &__vsl {
+    position: relative;
+    height: 50vh;
+
+    &__thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px;
+      clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
+    }
+
+    &__play-icon-container {
+      background-color: rgba(#ffffff, 0.6);
+      width: 12rem;
+      height: 12rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      box-shadow: 0 0 0pt 10pt rgba(hsl(0, 0%, 100%), 0.2);
+
+      @include respond(phone-port) {
+        width: 8rem;
+        height: 8rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__play-icon {
+      width: 3rem;
+
+      @include respond(phone-port) {
+        width: 2rem;
+      }
+    }
+  }
+}

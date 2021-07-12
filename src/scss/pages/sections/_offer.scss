@@ -1,0 +1,38 @@
+.offer {
+  &__container {
+    @include container(12rem, 12rem);
+    background-image: url("https://cdn.salesjet.io/953/funnel_files/1440/893_offer-background.png");
+    background-size: cover;
+    background-position: top;
+    color: white;
+    text-align: center;
+    padding: 10rem 10rem 15rem 10rem;
+  }
+
+  &__title,
+  &__subtitle {
+    color: $white;
+  }
+
+  &__title {
+    font-size: 6rem;
+  }
+  &__subtitle {
+    font-size: 2.5rem;
+  }
+
+  &__old-price {
+    text-decoration: line-through;
+    font-size: 2.8rem;
+    margin: 0;
+  }
+
+  &__price {
+    font-size: 7rem;
+    font-weight: 700;
+  }
+
+  &__btn {
+    margin: 4rem auto 6rem auto;
+  }
+}

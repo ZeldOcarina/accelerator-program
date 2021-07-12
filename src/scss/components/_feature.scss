@@ -1,0 +1,27 @@
+.feature {
+  width: 33rem;
+
+  &__image-container {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2rem;
+  }
+
+  &__image {
+    width: 50%;
+    // #2B59FF
+    filter: invert(32%) sepia(70%) saturate(4899%) hue-rotate(224deg)
+      brightness(99%) contrast(104%);
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    height: 7rem;
+  }
+}

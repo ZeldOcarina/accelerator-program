@@ -1,0 +1,32 @@
+.more-features {
+  @include container(12rem, 12rem);
+
+  &__feature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+
+    &:not(:last-child) {
+      margin-bottom: 8rem;
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__left-container {
+    width: 45rem;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__image {
+    width: 45rem;
+  }
+}

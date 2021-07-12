@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 10px;
+
+  @include respond(big-desktop) {
+    font-size: 10px;
+  }
+  @include respond(macbook) {
+    font-size: 12px;
+  }
+  @include respond(big-tv) {
+    font-size: 12px;
+  }
+  @include respond(short-laptop) {
+    font-size: 8px;
+  }
+}
+
+body {
+  font-family: $body-font;
+  color: $black;
+  font-size: $basic-font-size;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  background-color: $white;
+  overflow-x: hidden;
+
+  @include respond(phone-land) {
+    font-size: $mobile-font-size;
+  }
+}
+
+h1 {
+  font-size: $big-title;
+
+  @include respond(tab-land) {
+    font-size: 3.5rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-font;
+  font-weight: bold;
+  color: $color-primary;
+
+  @include respond(phone-land) {
+    font-size: $mobile-title-font-size;
+  }
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: $title-font-size;
+
+  @include respond(tab-land) {
+    font-size: 2.8rem;
+  }
+}
+
+p {
+  letter-spacing: 0.1rem;
+  line-height: 1.4;
+  margin: 2rem 0;
+  font-weight: 500;
+}
+
+section {
+}
+
+a {
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+hr {
+  border-top: 1px solid $color-secondary;
+  background-color: transparent;
+  width: 10rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+i {
+  font-style: italic;
+}
